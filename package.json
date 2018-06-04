@@ -1,0 +1,30 @@
+{
+  "name": "question-count",
+  "version": "1.0.0",
+  "description": "Identifies quizzes that do not have the same number of questions as preimport",
+  "main": "main.js",
+  "dependencies": {
+    "canvas-api-wrapper": "^3.2.0",
+    "canvas-wrapper": "github:byuitechops/canvas-wrapper"
+  },
+  "devDependencies": {
+    "async": "^2.6.0",
+    "child-development-kit": "github:byuitechops/child-development-kit",
+    "tap": "^10.7.3"
+  },
+  "scripts": {
+    "start": "node ./node_modules/child-development-kit/runChild.js",
+    "test": "tap ./node_modules/child-development-kit/runChild.js -T"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/byuitechops/question-count.git"
+  },
+  "author": "Zachary Williams, Daniel Green",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/byuitechops/question-count/issues"
+  },
+  "homepage": "https://github.com/byuitechops/question-count#readme",
+  "childType": "postImport"
+}
