@@ -12,7 +12,7 @@ module.exports = (course, stepCallback) => {
             let quizFile = quizzes.find(quizFile => quizFile.dom('assessment').get(0).attribs.title === quiz.title);
 
             if (quizFile) {
-                if (quiz.question_count === quizFile.dom('item').get().length + quizFile.dom('itemref').get().length) {
+                if (quiz.question_count !== quizFile.dom('item').get().length + quizFile.dom('itemref').get().length) {
                     course.log('Different Question Count', {
                         'Quiz': quiz.title,
                         'Canvas Question Count': quiz.question_count,
